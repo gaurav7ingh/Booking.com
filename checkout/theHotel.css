@@ -1,0 +1,132 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+#_main_container{
+    width: 85%;
+    margin: auto;
+
+}
+#reserve{
+    display: flex;
+
+    gap: 20px;
+}
+#sidebar{
+    width: 280px;
+}
+#_hotel_images{
+    width: 100%;
+}
+#_a{
+    display: flex;
+    justify-content: space-between;
+}
+._a{
+    width: 24%;
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(26, 110, 138);
+    background-color: rgb(227, 237, 241);
+}
+._a:hover{
+    cursor: pointer;
+}
+#_name_here{
+    margin: 20px 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+#_image_main{
+    display: flex;
+    justify-content: space-between;
+}
+#_image_1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+#_image_1>img{
+    width: 100%;
+    height: 150px;
+}
+#_image_2{
+    width: 68%;
+}
+#_image_2>img{
+    width: 100%;
+    height: 320px;
+}
+#_more_img{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+#_more_img>img{
+    width: 100%;
+    height: 100px;
+}
+
+#facilities_img{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+}
+#_details_explain{
+    margin-top: 20px;
+}
+#facilities_img>img{
+    width: 40%;
+}
+#_margin_top{
+    margin: 20px 0px;
+}
+._a{
+    text-decoration: none;
+}
+#_table{
+    width: 100%;
+    margin-top: 35px;
+}
+#_table>thead{
+    background-color: 
+    #4c76b2;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+}
+#_table tr td~td{
+    text-align: center;
+    padding: 8px;
+}
+#_table tr td {
+    border-bottom: 1px solid;
+}
+#_name_reserve{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+._button_{
+    height: 40px;
+    padding: 13px;
+    background-color:#0071c2;
+    color: white;
+    border: none;
+}
+._button_:hover{
+    cursor: pointer;
+}
+
