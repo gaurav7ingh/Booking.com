@@ -1,3 +1,6 @@
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 *{
     padding: 0;
@@ -6,7 +9,7 @@
 
 
 body{
-    color: white;
+    color:white;
     font: 16px/1.5 Arial, sant-serif;
 }
 
