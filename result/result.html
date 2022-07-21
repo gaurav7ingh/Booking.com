@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+		
+		#navbar{
+			height: 100px;
+		    background-color: blue;
+			border: 1px solid blue;
+		}
+		#oneDiv{
+			width: 80%;
+			margin: auto;
+			border: 1px solid black;
+			display: flex;
+			gap: 30px;
+		}
+		button{
+			padding: 10px;
+			border: none;
+			background-color: white;
+			cursor: pointer;
+		}
+      /* filter div css */
+	  #filter>div{
+		border: 1px solid black;
+	  }
+     #btn>div{
+		border: 1px solid black;
+		
+		
+	 }
+	 #btn{
+		display: flex;
+	 }
+	 
+	 #twoDiv{
+		width: 25%;
+	 }
+	 
+	 /* search box  */
+	 
+	  #dates{
+		border: 1px solid royalblue;
+		height: 300px;
+	    background-color: #febb02;
+		
+	 }
+
+	 /* resultData append css */
+	 #resultData{
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows: repeat(auto,300px);
+		row-gap: 20px;
+
+	 }
+	 #resultData>div{
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		display: flex;
+		gap: 10px;
+	 }
+	.twoDiv{
+		width: 30%;
+	}
+	.twoDiv>img{
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+</head>
+<body>
+    <!-- <input type="search" id="search" onchange="myFun()"> -->
+	
+	<div id="navbar"></div>
+	<div id="oneDiv">
+        <div id="twoDiv">
+			<div id="dates">
+				
+				<h3>Search</h3>
+				Destination properties name <br>
+				<input type="search" name="" id="search" onchange="search()" placeholder="search here"><br><br>
+				Check-in date <br>
+				<input type="date" name="" id=""><br><br>
+				Check-out date <br>
+				<input type="date" name="" id=""><br><br>
+				
+				<input type="text" name="" id="">
+			
+				
+			</div>
+			<div id="filter">
+			<div > 
+				<h4>Filter by:</h4>
+			</div>
+			<div>
+				<h4>Your previous filters</h4>
+				<input type="checkbox" name="" id=""> Hostels<br>
+				<input type="checkbox" name="" id="">Hotels <br>
+				<input type="checkbox" name="" id="">Spa and Wellness Centre <br>
+				<input type="checkbox" name="" id="">4 Stars <br>
+				<input type="checkbox" name="" id=""> Swimming Pool<br>
+			</div>
+			
+			<div>
+				<h4>Health & safety</h4>
+				<input type="checkbox" name="" id="">Properties helth & Safety <br>
+			</div>
+			<div>
+				<h4>Sustainability</h4>
+				<input type="checkbox" name="" id="">Travel Sustainable Properties <br>
+			</div>
+			
+			
+			<div>
+				<h4>popular filters</h4>
+				<input type="checkbox" name="" id="">Indoor pool <br>
+				<input type="checkbox" name="" id="">Resorts <br>
+				<input type="checkbox" name="" id="">5 Stars <br>
+				<input type="checkbox" name="" id=""> Open-air bath<br>
+				<input type="checkbox" name="" id="">Villas <br>
+			</div>
+			
+			<div>
+				<h4>Star rating </h4>
+				<input type="checkbox" name="" id=""> 2 Stars <br>
+				<input type="checkbox" name="" id="">3 Stars <br>
+				<input type="checkbox" name="" id=""> 4 Stars<br>
+				<input type="checkbox" name="" id="">5 Stars <br>
+				<input type="checkbox" name="" id=""> Unrated<br>
+			</div>
+			<div>
+				<h4>Distance</h4>
+				<input type="checkbox" name="" id="">Less than 1km <br>
+				<input type="checkbox" name="" id=""> Less than 3km <br>
+				<input type="checkbox" name="" id=""> Less than 5km <br>
+			</div>
+			<div>
+				<h4>Fun things to do</h4>
+				<input type="checkbox" name="" id="">Indoor pool <br>
+				<input type="checkbox" name="" id="">Games room <br>
+				<input type="checkbox" name="" id="">Badminton equipment <br>
+				<input type="checkbox" name="" id="">Children's playground <br>
+				<input type="checkbox" name="" id="">Hot tub/Jacuzz <br>
+				
+			</div>
+			<div>
+				<h4>Property type</h4>
+				<input type="checkbox" name="" id="">Villas <br>
+				<input type="checkbox" name="" id="">Hotels <br>
+				<input type="checkbox" name="" id="">Resorts <br>
+				<input type="checkbox" name="" id="">Holiday homes <br>
+				<input type="checkbox" name="" id="">Apartments <br>
+			</div>
+			<div>
+				<h4>Landmarks</h4>
+				<input type="checkbox" name="" id="">Tigor point <br>
+				<input type="checkbox" name="" id=""> Bhushi Dam<br>
+			</div>
+			<div>
+				<h4>Review score</h4>
+				<input type="checkbox" name="" id="">Super:9+ <br>
+				<input type="checkbox" name="" id="">Very good:8+ <br>
+				<input type="checkbox" name="" id="">Good:7+ <br>
+				<input type="checkbox" name="" id="">Pleasant:6+ <br>
+			</div>
+			<div>
+				<h4>Facilities</h4>
+				<input type="checkbox" name="" id="">Parking <br>
+				<input type="checkbox" name="" id=""> Restaurant<br>
+				<input type="checkbox" name="" id="">Pets allowed <br>
+				<input type="checkbox" name="" id=""> Room Service<br>
+				<input type="checkbox" name="" id=""> 24 hour front desk<br>
+			</div>
+			<div>
+				<h4>Neighbourhood</h4>
+				<input type="checkbox" name="" id="">Khandala <br>
+				<input type="checkbox" name="" id=""> Pimpri<br>
+			</div>
+			
+		</div>
+		</div>
+		<div id="threeDiv">
+			<h1 id="h1">Berlin: 1,301 properties found</h1>
+			<div id="btn">
+				<div><button>Our top Picks</button></div>
+					<div><button>Home & apartments first</button></div>
+						<div><button>Stars (highest first)</button></div>
+							<div><button>Stars(lowest first)</button></div>
+								<div><button>Genius</button></div>
+				</div>
+		   
+			  <div id="resultData">
+				
+			  </div>
+			</div>
+		
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+
+let search=()=>{
+        let value=document.querySelector("#search").value;
+        
+        console.log(value)
+        getData(value)
+        document.querySelector("#search").value=null;
+     }
+
+
+	 let getData=async(value)=>{
+        
+        const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'd7e496ffb4msh726b54e6f11e809p1a1c03jsn838ccc0f9f1f',
+		'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
+	}
+};
+ let res=await fetch(`https://booking-com.p.rapidapi.com/v1/hotels/locations?locale=en-gb&name=${value}`, options)
+     let data=await res.json();
+    //   console.log(data)
+     find(data);
+	
+     }
+
+	 let find=async(data)=>{
+       
+	   const options = {
+	   method: 'GET',
+	   headers: {
+		   'X-RapidAPI-Key': 'd7e496ffb4msh726b54e6f11e809p1a1c03jsn838ccc0f9f1f',
+		   'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
+	   }
+   };
+   
+  let res=await fetch(`https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates?order_by=popularity&adults_number=2&units=metric&room_number=1&checkout_date=2022-10-01&filter_by_currency=AED&locale=en-gb&checkin_date=2022-09-30&latitude=${data[0].latitude}&longitude=${data[0].longitude}&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`, options)
+	   
+let date=await res.json();
+console.log(date)
+ console.log(date.result);
+  append(date.result)
+   
+	}
+
+let append=(data)=>{
+	document.querySelector("#resultData").innerHTML=null;
+    data.forEach((el)=>{
+	 
+		let div1=document.createElement("div");
+		let div2=document.createElement("div");
+		let div3=document.createElement("div");
+		let img=document.createElement("img");
+		let h3=document.createElement("h3");
+		let p1=document.createElement("p");
+		let p2=document.createElement("p");
+
+		div1.setAttribute("class","oneDiv")
+		div2.setAttribute("class","twoDiv")
+		div3.setAttribute("class","threeDiv")
+
+		img.src=el.main_photo_url;
+		h3.innerText=el.hotel_name;
+		p1.innerText=el.address;
+		p2.innerText=el.city;
+
+		div2.append(img);
+		div3.append(h3,p1,p2)
+		div1.append(div2,div3)
+
+		document.querySelector("#resultData").append(div1)
+		document.querySelector("#h1").innerHTML=data[0].city;
+	})
+	
+}
+
+
+</script>
