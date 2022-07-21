@@ -129,4 +129,29 @@
 ._button_:hover{
     cursor: pointer;
 }
+#_choose{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+._choose>img{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(216, 228, 228);
+    padding: 10px;
+    border-radius: 10px;
+}
+._choose{
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    font-size: 17px;
+    gap: 10px;
+}
 
+#_fine_print{
+    background-color:  rgb(216, 228, 228);
+    padding: 15px 5px;
+}

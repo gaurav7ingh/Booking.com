@@ -1,6 +1,6 @@
 let onload = async () => {
     // let child = document.querySelector('#child').value;
-    let child=0
+    let child=3
     // let adults = document.querySelector('#adults').value;
     let adults = 2
   let url1 = `https://booking-com.p.rapidapi.com/v1/hotels/data?hotel_id=1377073&locale=en-gb`
@@ -17,13 +17,15 @@ let onload = async () => {
   let photos = await fetch(url, {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "3bc9083073msh0e3bcbca556a684p1a3788jsn18344c7b0ebd",
+      "X-RapidAPI-Key": "3bc9083073msh0e3bcbca556a684p1a3788jsn18344c7b0ebe",
       "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
     },
   })
   photos = await photos.json()
-  console.log(photos)
   let _main_image = document.querySelector("#_main_image")
+  // _main_image.addEventListener("click",()=>{
+  //   _append(photos)
+  // })
   let _image_1_1 = document.querySelector("#_image_1>img:nth-child(1)")
   let _image_1_2 = document.querySelector("#_image_1>img:nth-child(2)")
   let _name_here = document.querySelector("#_name_here")
@@ -38,6 +40,7 @@ let onload = async () => {
   img4.src = photos[6].url_1440
   let img5 = document.createElement("img")
   let _details_explain = document.querySelector('#_details_explain');
+  let _fine_print = document.querySelector('#_fine_print');
   img5.src = photos[7].url_1440
   _name_here.innerText = res.name
   _main_image.src = photos[0].url_1440
@@ -45,8 +48,10 @@ let onload = async () => {
   _image_1_2.src = photos[2].url_1440
   _more_img.append(img1, img2, img3, img4, img5)
   _details_explain.innerText = res.description_translations[0].description;
+  _fine_print.innerText =  res.description_translations[0].description;
 }
 onload()
+
 async function appendTable(find,child,adults){
     let id = find.hotel_id;
     let url = `https://booking-com.p.rapidapi.com/v1/hotels/room-list?checkin_date=2022-09-30&units=metric&checkout_date=2022-10-01&currency=AED&locale=en-gb&adults_number_by_rooms=${adults}&hotel_id=${id}&children_number_by_rooms=${child}`
