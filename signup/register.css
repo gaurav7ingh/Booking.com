@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#jarvis {
+
+    margin-top: 30px;
+}
+
+#accContainer {
+    height: 600px;
+    width: 58%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* color: black; */
+}
+
+#accContainer h1 {
+    /* color: black; */
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+
+
+#loginForm label {
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+}
+
+
+#loginBox input {
+    padding: 7px;
+    margin: 15px 0px 20px 0px
+}
+
+
+.login-email-input {
+    width: 100%;
+}
+
+
+#loginForm .submit-login-form {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #0272A2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+
+#loginBox {
+    height: 100%;
+    width: 40%;
+    color: black;
+    /* border: 1px solid teal; */
+}
+
+#loginForm .password {
+    width: 100%;
+}
+
+#loginForm .submit-login-form {
+    background-color: rgb(29, 94, 235);
+}
+
+#loginForm .submit-login-form:hover {
+    cursor: pointer;
+    background-color: rgb(26, 90, 63);
+    transition: all .2s ease-in-out;
+}
+
+#loginForm a {
+    color: #0272a2;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+#loginBox p{
+font-size: 12px;
+text-align: center;
+color:black;
+line-height: 18px;
+margin-top: 10px;
+}
+#loginBox a{
+color:rgb(75, 65, 65);
+font-weight: bold;
+/* line-height: 15px; */
+}
