@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+	<style>
+		
+		#navbar{
+			height: 100px;
+		    background-color: blue;
+			border: 1px solid blue;
+		}
+		#oneDiv{
+			width: 80%;
+			margin: auto;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			display: flex;
+			gap: 30px;
+		}
+		button{
+			padding: 10px;
+			border: none;
+			background-color: white;
+			cursor: pointer;
+		}
+      /* filter div css */
+	  #filter>div{
+		box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+		
+	  }
+     #btn>div{
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		border: 1px solid blue;
+	 }
+	 #btn>div>button:hover{
+		/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		border: 1px solid blue; */
+		background-color: blue;
+		color: white;
+	 }
+	 #btn>div>button{
+		color: blue;
+	 }
+	 #btn{
+		display: flex;
+	 }
+	 
+	 #twoDiv{
+		width: 25%;
+	 }
+	 
+	 /* search box  */
+	 
+	  #dates{
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		height: 330px;
+	    background-color: #febb02;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	 }
+	 #ridate{
+		width: 80%;
+		margin-left: 15px;
+	 }
+	 #rodate{
+		width: 80%;
+		margin-left: 15px;
+	 }
+	 #search{
+		width: 80%;
+		margin-left: 17px;
+	 }
+	 #boxcheck1{
+		
+		margin-left: 17px;
+	 }
+	 #boxcheck2{
+	
+		margin-left: 17px;
+	 }
+     #rsb{
+		background-color: blue;
+		padding:5px 20px 5px 20px;
+		margin-left: 70px;
+		color: white;
+		margin-top: 5px;
+	 }
+
+
+
+	 /* resultData append css */
+	 #resultData{
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows: repeat(auto,200px);
+		row-gap: 20px;
+
+	 }
+	 #resultData>div{
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		display: flex;
+		height: 200px;
+	    justify-content: space-between;
+	 }
+	.twoDiv{
+	     width: 30%;
+	}
+	.threeDiv{
+		width: 40%;
+		padding-left: 40px;
+	}
+	.fourDiv{
+		width: 20%;
+	}
+	.twoDiv>img{
+		width: 100%;
+		height: 100%;
+	}
+	.blueBtn{
+		background-color: blue;
+		color: white;
+		padding: 10px;
+	}
+	/* .threeDiv{
+		padding-left: 50px;
+	} */
+	 .fourDiv>h3{
+		/* padding-left: 50px; */
+		color: red;
+	} 
+	.fourDiv{
+		margin-left: 50px;
+	}
+	.p6{
+		font-size: small;
+		color: gray;
+	}
+	.threeDiv>h2{
+		color: blue;
+	}
+	.p2{
+		color: blue;
+	}
+	.p1{
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+    <!-- <input type="search" id="search" onchange="myFun()"> -->
+	
+	<div id="navbar"></div>
+	<div id="oneDiv">
+        <div id="twoDiv">
+			<div id="dates">
+				
+				<h2> &nbsp; &nbsp;Search</h2>
+				&nbsp; &nbsp; Destination/property name: <br>
+				<input type="search" name="" id="search"  placeholder="search here"><br><br>
+				&nbsp; &nbsp;Check-in date <br>
+				<input type="date" name="" id="ridate"><br><br>
+				&nbsp; &nbsp;Check-out date <br>
+				<input type="date" name="" id="rodate"><br><br>
+				
+				<input type="checkbox" name="" id="boxcheck1" >
+				Entire homes & apartments <br>
+				<input type="checkbox" name="" id="boxcheck2">
+				I'm travelling for work
+				<button onclick="search()" id="rsb">search</button>
+			</div>
+			<div id="filter">
+			<div > 
+				<h4>  &nbsp;  &nbsp;Filter by:</h4>
+			</div>
+			<div>
+				<h4> &nbsp; &nbsp;Your previous filters</h4>
+			&nbsp; &nbsp;<input type="checkbox" name="" id="c1" value="c1" > Hostels<br>
+		&nbsp; &nbsp;<input type="checkbox" name="" id="c2" value="c2">Hotels <br>
+		&nbsp; &nbsp;<input type="checkbox" name="" id="c3"value="c3">Spa and Wellness <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c4"value="c4">4 Stars <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c5"value="c5"> Swimming Pool<br>
+			</div>
+			
+			<div>
+				<h4>&nbsp; &nbsp;Health & safety</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c6"value="c6">Properties helth <br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Sustainability</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c7"value="c7">Travel Sustainable <br>
+			</div>
+			
+			
+			<div>
+				<h4>&nbsp; &nbsp;popular filters</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c8"value="c8">Indoor pool <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c9"value="c9">Resorts <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c10"value="c10">5 Stars <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c11"value="c11">  bath<br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c12"value="c12">Villas <br>
+			</div>
+			
+			<div>
+				<h4>&nbsp; &nbsp;Star rating </h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c13"value="c13"> 2 Stars <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c14"value="c14">3 Stars <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c15"value="c15"> 4 Stars<br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c16"value="c16">5 Stars <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c17"value="c17"> Unrated<br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Distance</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c18"value="c18">Less than 1km <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c19"value="c19"> Less than 3km <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c20"value="c20"> Less than 5km <br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Fun things to do</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c21"value="c21">Indoor pool <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c22"value="c22">Games room <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c23"value="c23">Badminton equip<br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c24"value="c24">Children's ground <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c25"value="c25">Hot tub/Jacuzz <br>
+				
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Property type</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c26"value="c26">Villas <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c27"value="c27">Hotels <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c28"value="c28">Resorts <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c29"value="c29">Holiday homes <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c30"value="c30">Apartments <br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Landmarks</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c31"value="c31">Tigor point <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c32"value="c32"> Bhushi Dam<br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Review score</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c33"value="c33">Super:9+ <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c34"value="c34">Very good:8+ <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c35"value="c35">Good:7+ <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c36"value="c36">Pleasant:6+ <br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Facilities</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c37"value="c37">Parking <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c38"value="c38"> Restaurant<br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c39"value="c39">Pets allowed <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c40"value="c40"> Room Service<br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c41"value="c41"> 24 hour desk<br>
+			</div>
+			<div>
+				<h4>&nbsp; &nbsp;Neighbourhood</h4>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c42"value="c42">Khandala <br>
+				&nbsp; &nbsp;<input type="checkbox" name="" id="c43"value="c43"> Pimpri<br>
+			</div>
+			
+		</div>
+		</div>
+		<div id="threeDiv">
+			<h1 id="h1">Result Data </h1>
+			<div id="btn">
+				<div><button id="b1"value="b1">Our top Picks</button></div>
+					<div><button id="b2"value="b2">Home & apartments first</button></div>
+						<div><button id="b3"value="b3">Stars (highest first)</button></div>
+							<div><button id="b4"value="b4">Stars(lowest first)</button></div>
+								<div><button id="b5"value="b5">Genius</button></div>
+				</div>
+		   
+			  <div id="resultData">
+				
+			  </div>
+			</div>
+		
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="result.js"></script>
