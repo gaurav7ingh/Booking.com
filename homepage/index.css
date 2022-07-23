@@ -1,6 +1,127 @@
+
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color:white;
+    font: 16px/1.5 Arial, sant-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+
+
+header .booking-form{
+    background-color: #F5F5F5;
+    color:white;
+    /* border: 1px solid red; */
+    background: #003580;
+    height: 170px;
+    font-size:12px;
+}
+
+.container.booking{
+    padding: 50px 0px;
+    /* font-size: 30px; */
+}
+.container.booking>h3{
+    font-size: 30px;
+}
+.container.booking>p{
+    font-size: 18px;
+}
+.container.booking form{
+    display: flex;
+    /*background-color: aqua;*/
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* font-size: smaller; */
+}
+
+form .field-des{
+    flex: 2;
+    border: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+    /* border: 1px solid green; */
+}
+
+form .field-des:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+}
+
+form .field-check{
+    flex: 1;
+    border-top: 4px solid #FEBB02;
+    border-bottom: 4px solid #FEBB02;
+    border-right: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+}
+
+form .field-check:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+    cursor: pointer;
+}
+
+form .field-room{
+    flex: 1;
+    border-top: 4px solid #FEBB02;
+    border-bottom: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+}
+
+form .field-room:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+    /* cursor: pointer; */
+}
+
+
+form button{
+    flex: 0.5;
+    padding: 15px 0px;
+    border: 4px solid #FEBB02;
+    color: #fff;
+    background: #003580;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #0071C2;
+}
+
+
+
+.container.booking form input{
+    width: 88%;
+    height: 93%;
+    margin-top: 2px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.container.booking form input:focus{
+    outline: none;
+}
+label{
+    color: black;
+}
+
 
 main {
     padding-top: 30px;
@@ -118,7 +239,13 @@ main {
 .bloc_03 h3 {
     font-family: 'Segoe UI Bold', Arial, sans-serif;
     font-size: 24px;
-    margin-bottom:20px;
+    margin-bottom:5px;
+    color: black;
+}
+.bloc_03 p {
+    font-family: 'Segoe UI Bold', Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom:10px;
     color: black;
 }
 
@@ -349,7 +476,7 @@ main {
     align-self: flex-start;
     font-family: 'Segoe UI Bold', Arial, sans-serif;
     font-size: 24px;
-    /* color: black; */
+    color: black;
 }
 
 .grid_02 {
@@ -440,7 +567,7 @@ main {
 .bloc_07 {
     width: 1140px;
     padding: 0 16px;
-    margin-top: 12px;
+    margin-top: 42px;
     position: relative;
     /* border: 1px solid blue; */
 }
@@ -466,7 +593,7 @@ main {
 .bloc_07 h5 {
     font-family: 'Segoe UI Bold', Arial, sans-serif;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: black;
 }
 
@@ -601,6 +728,7 @@ main {
     font-family: 'Segoe UI Bold', Arial, sans-serif;
     font-size: 24px;
     margin-bottom: 35px;
+    color: black;
 }
 
 .title_10 {
@@ -650,191 +778,5 @@ main {
 }
 
 /*----------------------------------------*/
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-.bannier_12 {
-    color: white;
-    height: auto;
-    min-height: 250px;
-    width: 100%;
-    background-color: #00224F;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-}
-
-.bannier_12 h6 {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 4px;
-}
-
-.subtitle12 {
-    font-size: 16px;
-    color: lightgray;
-    margin-bottom: 25px;
-}
-
-.bloc_121 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 547px;
-    height: 50px;
-}
-
-.bloc_121 input {
-    padding: 0 16px;
-    width: 380px;
-    border-radius: 4px;
-}
-
-.bloc_121 input.placeholder {
-    color: lightgrey;
-} 
-
-.bloc_121 button {
-    font-size: 18px;
-    width: 162px;
-    border-radius: 4px;
-    color: white;
-    background-color: #0071C2;
-}
-
-.bloc_122 {
-    margin-top: 10px;
-    width: auto;
-    max-width: 547px;
-    height: 20px;
-    display: flex
-}
-
-.bloc_122 input {
-    width: 15px;
-    margin-right: 2px;
-}
-
-.bloc_122 p {
-    font-size: 13px;
-}
-
-/*-----------------------------------*/
-
-.bannier_13 {
-    height: auto;
-    min-height: 100px;
-    width: 100%;
-    background-color: #003580;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.bannier_13 button {
-    cursor: pointer;
-    display: flex;
-    height: 28px;
-    line-height: 24px;
-    padding: 0 16px;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 4px;
-    margin: 15px auto
-}
-
-.liens_13 {
-    border-top: 1px solid white;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.liens_13 div {
-    display: flex;
-    align-items: center;
-    height: 39px;
-    width: 100%;
-    max-width: 1110px;
-}
-
-.liens_13 div a {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-    height: 100%;
-    width: max-content;
-    max-width: 320px;
-    text-decoration: underline;
-}
-
-
-footer {
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    min-height: 650px;
-    background-color: white;
-    overflow: hidden;
-}
-
-
-.foottitle {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #0071C2;
-}
-
-footer p {
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-li {
-    display: block;
-}
-li a{
-    text-decoration: none;
-    list-style-type: none;
-    color: #fff;
-    text-align: center;
-     padding: 14px 16px;
-}
-.flex-container{
-    display: flex;
-    margin:0 auto; /* this will center the page */
-    width:990px;
-    /* color: #003580; */
-    color: #0071C2;
-     list-style-type: none;
-     text-decoration: none;
-}
-.flex-container-div{
-    display: block;
-    padding: 0px 0px 0px 0px;
-    text-align: left;
-    /* gap: 50px; */
-
-}
-li:hover{
-    color: orange;
-    cursor: pointer;
-}
-    
-
 
 

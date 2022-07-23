@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="../navbar/nav.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <div id="jarvis">
+        <div id="accContainer">
+            <div id="signupBox">
+                <div id="form">
+                    <h1>Create password</h1>
+                    <h6>Use a minimum of 10 characters, including uppercase letters, lowercase letters and numbers.<h6>
+                            <input type="text" id="email" placeholder="Your email">
+                            <input type="text" id="password" placeholder="Your password">
+                            <button id="log_in" onclick="login()">Login</button>
+
+                </div>
+
+                <p>By signing in or creating an account , you agree with our <a href="">Terms & Conditions</a> and <a
+                        href="">Privacy statement</a>.</p>
+                <p>All rights reserved.<br>Copyright (2006-2022)- Booking.com®</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script type="module">
+    import nav from "../component/nav.js"
+    document.querySelector("nav").innerHTML = nav()
+</script>
+
+
+<script src="create.js"></script>
