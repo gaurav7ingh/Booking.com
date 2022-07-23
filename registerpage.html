@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="create.css">
-    <link rel="stylesheet" href="../navbar/nav.css">
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/nav.css">
 </head>
 
 <body>
@@ -18,11 +18,17 @@
         <div id="accContainer">
             <div id="signupBox">
                 <div id="form">
-                    <h1>Create password</h1>
-                    <h6>Use a minimum of 10 characters, including uppercase letters, lowercase letters and numbers.<h6>
-                            <input type="text" id="email" placeholder="Your email">
-                            <input type="text" id="password" placeholder="Your password">
-                            <button id="log_in" onclick="login()">Login</button>
+                    <h1>Sign in or create an account</h1>
+                            
+                            <label for="">Name</label> <br>
+                            <input type="text" id="name" >
+
+                            <label for="">Email address</label> <br>
+                            <input type="text" id="email" >
+
+                            <label for="">Password</label> <br>
+                            <input type="password" id="password">
+                            <button id="sign_up" onclick="signin()">Signup</button>
 
                 </div>
 
@@ -37,9 +43,8 @@
 
 </html>
 <script type="module">
-    import nav from "../component/nav.js"
+    import nav from "./component/nav.js"
     document.querySelector("nav").innerHTML = nav()
 </script>
 
-
-<script src="create.js"></script>
+<script src="./script/registerpage.js"></script>

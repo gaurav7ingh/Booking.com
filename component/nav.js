@@ -15,35 +15,35 @@ let navbar=()=>{
             </div>
     
             <h4 class="navform lyp"><a href="#">List your property</a></h4>
-            <h4 class="navform register"><a href="../signup/registerpage.html">Register</a></h4>
-            <h4 class="navform signin"><a href="../signup/create.html">Sign in</a></h4>
+            <h4 class="navform register"><a href="registerpage.html">Register</a></h4>
+            <h4 class="navform signin"><a href="create.html">Sign in</a></h4>
         </div>
     </div>
     <div class="bottom-nav">
         <ul>
             <li>
-                <a href="#">Stays</a>   
+                <a href="index.html">Stays</a>   
                
             </li>
             <li>
                
-                <a href="#">Flight</a>
+                <a href="fligth.html">Flight</a>
             </li>
             <li>
                 
-                <a href="#">Flight+Hotel</a>
+                <a href="flight_hotel.html">Flight+Hotel</a>
             </li>
             <li>
               
-                <a href="#">Car rentals</a>
+                <a href="car.html">Car rentals</a>
             </li>
             <li>
                
-                <a href="#">Attractions</a>
+                <a href="attractions.html">Attractions</a>
             </li>
             <li>
                
-                <a href="#">Airport taxis</a>
+                <a href="air.html">Airport taxis</a>
             </li>
         </ul>
     </div>
