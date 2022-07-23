@@ -1,0 +1,249 @@
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color:white;
+    font: 16px/1.5 Arial, sant-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+header{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+header nav{
+    background: #003580;
+}
+
+.container.nav{
+    /* border: 1px soilid green; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container.nav .top-nav{
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*background-color: aqua;*/
+    height: 50px;
+}
+
+
+.top-nav .left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.top-nav .right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right img{
+    border-radius: 50%;
+    width: 1.33em;
+}
+.boutonInt {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.right .navform{
+    border: 1px solid #fff;
+    padding: 5px 0px;
+}
+
+.navform.lyp{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.navform.register,
+.navform.signin{
+    padding-left: 5px;
+    padding-right: 7px;
+    color: #003580;
+    background: #fff;
+    border: 2px solid #0071C2;
+}
+
+
+.navform.register a,
+.navform.signin a{
+    color: #0071C2;
+    cursor: pointer;
+    
+
+}
+.navform.register:hover{
+    background-color: rgb(197, 253, 235);
+}
+.navform.signin:hover{
+    background-color: rgb(197, 253, 235);
+}
+
+.bottom-nav ul{
+    display: flex;
+    width: auto;
+   
+}
+
+
+ul li :hover{
+    background-color: #0071C2;
+    cursor: pointer;
+}
+ul li >a{
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: .025em;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    line-height: 100%;
+    border-bottom: 2px solid transparent;
+    padding: 16px;
+    border-radius: 30px 30px 30px 30px;
+    flex-wrap: nowrap;
+}
+
+
+
+header .booking-form{
+    background-color: #F5F5F5;
+    color:white;
+    /* border: 1px solid red; */
+    background: #003580;
+    height: 170px;
+    font-size:12px;
+}
+
+.container.booking{
+    padding: 50px 0px;
+    /* font-size: 30px; */
+}
+.container.booking>h3{
+    font-size: 30px;
+}
+.container.booking>p{
+    font-size: 18px;
+}
+.container.booking form{
+    display: flex;
+    /*background-color: aqua;*/
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* font-size: smaller; */
+}
+
+form .field-des{
+    flex: 2;
+    border: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+    /* border: 1px solid green; */
+}
+
+form .field-des:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+}
+
+form .field-check{
+    flex: 1;
+    border-top: 4px solid #FEBB02;
+    border-bottom: 4px solid #FEBB02;
+    border-right: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+}
+
+form .field-check:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+    cursor: pointer;
+}
+
+form .field-room{
+    flex: 1;
+    border-top: 4px solid #FEBB02;
+    border-bottom: 4px solid #FEBB02;
+    background: #fff;
+    padding-left: 20px;
+}
+
+form .field-room:hover{
+    box-shadow:0px 0px 0px 1px #eeb20d inset;
+    /* cursor: pointer; */
+}
+
+
+form button{
+    flex: 0.5;
+    padding: 15px 0px;
+    border: 4px solid #FEBB02;
+    color: #fff;
+    background: #003580;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #0071C2;
+}
+
+
+
+.container.booking form input{
+    width: 88%;
+    height: 93%;
+    margin-top: 2px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.container.booking form input:focus{
+    outline: none;
+}
+label{
+    color: black;
+}
