@@ -1,6 +1,9 @@
-#header {
+p,h1{
+  margin: 16px 0px;
+}
+
+#navbar {
     padding: 0px;
-    height: 100px;
     width: 100%;
     background-color:
         #003580;
@@ -18,9 +21,9 @@
     width: 85%;
     background-color: #fff0e0;
     margin: auto;
-    margin-top: 30px;
     border-radius: 2px;
     padding: 5px;
+    /* margin-top: 30px; */
     border: 1px solid red;
 }
 
@@ -45,7 +48,7 @@
     display: flex;
     
 }
-label{
+#this label{
     font-size: 15px;
 }
 #search{
@@ -87,7 +90,7 @@ label{
   
   /* custom styles */
 
-  label {
+  #this label {
     display: block;
   }
   #btn{
@@ -96,7 +99,7 @@ label{
     #0071c2;
     color: white;
   }
-  input[type="text"]{
+  #this input[type="text"]{
     width: 38%;
   }
   #chk{
@@ -147,7 +150,7 @@ border: none;
     gap: 10px;
     margin: auto;
   }
-  img{
+   #this img{
     width: 93%;
   }
   #change{
@@ -246,14 +249,15 @@ border: none;
 
 }
 #andar{
-
+  padding-top: 20px;
   height: 60px;
   width: 60%;
- 
   margin: auto;
   display: flex;
+  justify-content: space-around;
+  align-self: center;
 }
-a{
+#this a{
   color: white;
   font-size: 16px;
   margin-left: 20px;

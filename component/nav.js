@@ -27,7 +27,7 @@ let navbar=()=>{
             </li>
             <li>
                
-                <a href="fligth.html">Flight</a>
+                <a href="flights.html">Flight</a>
             </li>
             <li>
                 

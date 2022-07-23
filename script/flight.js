@@ -1,3 +1,5 @@
+import nav from "../component/nav.js"
+    document.querySelector("nav").innerHTML = nav()
 var data = [
     { img: "https://q-xx.bstatic.com/xdata/images/city/square210/620027.jpg?k=3e415bb694a1a0145529dad3242573d0d52364bc57bae824b5990bf9c2fabc04&o=", name: "Kolkata to Bangkok", wdate: "Jul 24 - Jul 31 ", wh: "Round trip" },
     { img: "https://q-xx.bstatic.com/xdata/images/city/square210/674773.jpg?k=f65fb36a6b12a3f09a07232ef7946deb46871c0d5a308d3e16ff127d61233f41&o=", name: "Kolkata to Male City", wdate: "Jul 26 - Aug 2 ", wh: "Round trip" },
