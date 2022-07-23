@@ -56,8 +56,9 @@ label{
 }
 
 [type="date"] {
-    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-    padding: 10px;
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  95% 50% no-repeat ;
+    padding: 3px;
+   
   }
   [type="date"]::-webkit-inner-spin-button {
     display: none;
