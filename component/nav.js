@@ -16,7 +16,7 @@ let navbar=()=>{
     
             <h4 class="navform lyp"><a href="#">List your property</a></h4>
             <h4 class="navform register"><a href="../signup/registerpage.html">Register</a></h4>
-            <h4 class="navform signin"><a href="../signup/registerpage.html">Sign in</a></h4>
+            <h4 class="navform signin"><a href="../signup/create.html">Sign in</a></h4>
         </div>
     </div>
     <div class="bottom-nav">

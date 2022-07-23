@@ -6,32 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../navbar/nav.css">
     <link rel="stylesheet" href="register.css">
-   </head>
+    <link rel="stylesheet" href="../navbar/nav.css">
+</head>
 
 <body>
     <nav>
 
     </nav>
     <div id="jarvis">
-        <div id="accContainer">  
-          
-            <div id="loginBox">
-                <h1>Sign in or create an account</h1>
-                <form id="loginForm">
-                    <label for="">Email address</label> <br>
-                    <input type="email" name="email_input" class="login-email-input" placeholder="Email">
-                  
-                    <input type="submit" value="Continue with email" class="submit-login-form" onclick="myfun()">
-                    <a href="">Forgot your password?</a>
-                   
-                </form>
-                <p>By signing in  or creating an account , you agree with our  <a href="">Terms & Conditions</a> and <a href="">Privacy statement</a>.</p>
-                    <p>All rights reserved.<br>Copyright (2006-2022)- Booking.com®</p>
+        <div id="accContainer">
+            <div id="signupBox">
+                <div id="form">
+                    <h1>Sign in or create an account</h1>
+                            
+                            <label for="">Name</label> <br>
+                            <input type="text" id="name" >
+
+                            <label for="">Email address</label> <br>
+                            <input type="text" id="email" >
+
+                            <label for="">Password</label> <br>
+                            <input type="password" id="password">
+                            <button id="sign_up" onclick="signin()">Signup</button>
+
+                </div>
+
+                <p>By signing in or creating an account , you agree with our <a href="">Terms & Conditions</a> and <a
+                        href="">Privacy statement</a>.</p>
+                <p>All rights reserved.<br>Copyright (2006-2022)- Booking.com®</p>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
@@ -39,9 +46,5 @@
     import nav from "../component/nav.js"
     document.querySelector("nav").innerHTML = nav()
 </script>
-<script>
-    function myfun(){
-        let email = document.getElementById("")
-    }
 
-</script>
+<script src="registerpage.js"></script>
