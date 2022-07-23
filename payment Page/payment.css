@@ -13,7 +13,7 @@
     padding: 10px;
 }
 #_first_>div{
-    border: 1px solid;
+    border: 1px solid rgb(231, 231, 231);
     margin-bottom: 20px;
 }
 #_first_>div:nth-child(1)>div{
@@ -53,7 +53,7 @@
     padding: 10px;
 }
 #_second_>div{
-    border: 1px solid;
+    border: 1px solid rgb(231, 231, 231);
     margin-bottom: 20px;
 }
 #_info{
@@ -105,4 +105,16 @@
     height: 35px;
     margin-bottom: 23px;
     margin-left: 3px;
+}
+#_complete{
+    display: flex;
+    justify-content: right;
+}
+#_complete>a>button{
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }

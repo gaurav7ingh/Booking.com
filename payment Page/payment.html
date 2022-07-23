@@ -32,11 +32,11 @@
             <div class="_price_"></div>
           </div>
         </div>
-        <div>
+        <div id="promoDiv">
           <h3>Do you have a promo code?</h3>
           <label for="_promo">Enter your promo code</label>
           <input type="text" id="_promo" />
-          <button id="_promo_btn">Apply</button>
+          <button>Apply</button>
         </div>
         <div>
           <h3>The Fine Print</h3>
@@ -47,7 +47,9 @@
         <div></div>
         <div id="_info">
           <h2>Enter your info</h2>
-          <div class="_one">Almost done! Just fill in the <b>*</b> required info</div>
+          <div class="_one">
+            Almost done! Just fill in the <b>*</b> required info
+          </div>
           <label>Country/region</label>
           <select>
             <option value="">-- -- Select country/region -- --</option>
@@ -321,16 +323,21 @@
             <option value="zm" data-prefix="">Zambia</option>
             <option value="zw" data-prefix="">Zimbabwe</option>
           </select>
-          <div style="margin-bottom: 20px;">No address needed for this reservation</div>
+          <div style="margin-bottom: 20px">
+            No address needed for this reservation
+          </div>
           <label> Telephone (mobile number preferred) </label>
-          <input id="_phone" type="number"/>
+          <input id="_phone" type="number" />
           <div>Needed by the property to validate your booking</div>
         </div>
         <div>
           <h2>How do you want to pay?</h2>
-          <div class="_one" style="width: auto;"> Your card won't be charged, we only need your card details to guarantee your booking.</div>
+          <div class="_one" style="width: auto">
+            Your card won't be charged, we only need your card details to
+            guarantee your booking.
+          </div>
           <label> Cardholder's name * </label>
-          <input  id="_name" type="text"/>
+          <input id="_name" type="text" />
           <label>Card type *</label>
           <select id="_card_type">
             <option value="">--select--</option>
@@ -340,18 +347,21 @@
             <option value="American Express">American Express</option>
           </select>
           <label> Card number * </label>
-          <input  id="_card_num" type="text"/>
+          <input id="_card_num" type="text" />
 
           <label> Expiry date * </label>
-          <input  id="_month" type="month"/>
-          
-          <label> CVC-code * </label>
-          <input style="width: 100px;" id="_cvc" type="number"/>
+          <input id="_month" type="month" />
 
+          <label> CVC-code * </label>
+          <input style="width: 100px" id="_cvc" type="number" />
         </div>
 
         <!-- now i have to work here  -->
+        <div style="border: none;" id="_complete">
+          <a href="OTP.html"><button>Complete Booking</button></a>
+        </div>
       </div>
     </div>
   </body>
 </html>
+<script src="payment.js"></script>

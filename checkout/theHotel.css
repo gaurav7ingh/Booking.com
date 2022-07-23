@@ -32,7 +32,7 @@
     align-items: center;
     font-weight: bold;
     color: rgb(26, 110, 138);
-    background-color: rgb(227, 237, 241);
+    background-color: #ebf3ff;
 }
 ._a:hover{
     cursor: pointer;
@@ -139,7 +139,7 @@
 ._choose>img{
     width: 40px;
     height: 40px;
-    background-color: rgb(216, 228, 228);
+    background-color: #ebf3ff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -152,6 +152,6 @@
 }
 
 #_fine_print{
-    background-color:  rgb(216, 228, 228);
+    background-color:  #ebf3ff;
     padding: 15px 5px;
 }

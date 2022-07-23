@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+    
+    <style>
+        label {
+            width: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 24px;
+            color: white;
+        }
+        #otp-btn{
+             display: block;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 230px;
+        }
+        input{
+            display: block;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 230px;
+        }
+        #otpDiv{
+          border: 1px solid #555;
+          width: 60%;
+          margin: auto;
+          height: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--X1VpDlir--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nfqcomd0rgb3uxe8yrhx.jpg);
+          background-size: 100% 100%;
+          border-radius: 10px;
+          opacity: 0.91;
+        }
+        
+    </style>
+   
+  </head>
+  <body>
+
+  
+
+
+    <div id="otpDiv">
+    
+      <label for="OTP">Enter Your OTP Here</label>
+      <input type="password" id="otp" />
+      <button id="otp-btn">Submit</button>
+    
+  </div>
+  
+  </body>
+</html>
+
+<script>
+    const form = document.querySelector('#otp-btn');
+    let clearThis = JSON.parse(localStorage.getItem("objarrayforBasket"));
+    form.addEventListener("click",myfunction);
+    const inputOtp = document.querySelector('#otp');
+    function myfunction(event){
+        if(inputOtp.value=="1234"){
+            alert("Payment successful")
+            let arr="";
+            localStorage.setItem("objarrayforBasket",JSON.stringify(arr))
+            location.href ="index.html"
+        }else{
+          alert("Invalid")
+        }
+    }
+   
+   
+</script>
+
