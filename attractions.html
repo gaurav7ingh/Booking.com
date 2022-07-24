@@ -139,12 +139,7 @@
         }
     ]
     
-    <script type="module" >
-    import nav from "./component/nav.js"
-    import footer from "./component/footer.js"
-    document.querySelector("nav").innerHTML = nav()
-    document.querySelector('footer').innerHTML = footer();
-</script>
+    
     arr.forEach((el,i) => {
         let div=document.createElement("div");
         let back = el.url;
@@ -157,5 +152,11 @@
         document.querySelector("#total4").append(div)
     });
 
+</script>
+<script type="module" >
+    import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
 </script>
 
