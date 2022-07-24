@@ -1,4 +1,4 @@
-let navbar=()=>{
+let nav=()=>{
     return`<div class="container nav">
     <div class="top-nav">
         <div class="left">
@@ -31,11 +31,11 @@ let navbar=()=>{
             </li>
             <li>
                 
-                <a href="flight_hotel.html">Flight+Hotel</a>
+                <a href="flights+hotels.html">Flight+Hotel</a>
             </li>
             <li>
               
-                <a href="car.html">Car rentals</a>
+                <a href="carrental.html">Car rentals</a>
             </li>
             <li>
                
@@ -43,7 +43,7 @@ let navbar=()=>{
             </li>
             <li>
                
-                <a href="air.html">Airport taxis</a>
+                <a href="taxi.html">Airport taxis</a>
             </li>
         </ul>
     </div>
@@ -55,4 +55,4 @@ let navbar=()=>{
 
 
 
-export  default navbar
+export  default nav
