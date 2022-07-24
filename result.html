@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
-	<link rel="stylesheet" href="./styles/result.css">
-	<link rel="stylesheet" href="./styles/nav.css">
+	<link rel="stylesheet" href="./style/result.css">
+	<link rel="stylesheet" href="./style/nav.css">
+	<link rel="stylesheet" href="./style/foot.css">
+
 </head>
 <body>
     <!-- <input type="search" id="search" onchange="myFun()"> -->
 	
-	<div id="navbar"></div>
+	<nav></nav>
 	<div id="oneDiv">
         <div id="twoDiv">
 			<div id="dates">
@@ -141,10 +143,13 @@
 			</div>
 		</div>
 	</div>
+	<footer></footer>
 </body>
 </html>
-<script src="./scripts/result.js"></script>
+<script src="./script/result.js"></script>
 <script type="module" >
-    import  nav from "./component/nav.js"
-    document.querySelector("#navbar").innerHTML=nav()
+    import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
 </script>

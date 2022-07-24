@@ -4,17 +4,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking.com | final Deatils</title>
+    <link rel="stylesheet" href="./style/nav.css" />
     <link rel="stylesheet" href="./style/payment.css" />
+    <link rel="stylesheet" href="./style/foot.css">
+    <style>
+      #_pay * {
+        margin: 4px;
+        padding: 2px;
+        box-sizing: border-box;
+      }
+      #_pay>#_second_ h2{
+        padding: 16px 0px;
+      }
+      #_pay>#_second_ ._one{
+        margin-bottom: 19px ;
+      }
+    </style>
   </head>
 
-  <body>
+  <body onload="done()">
+    <nav></nav>
     <div id="_pay">
       <div id="_first_">
         <div>
           <h3>Your Booking Details</h3>
           <div>
-            <div id="_in">check-in</div>
-            <div id="_out">check-out</div>
+            <div>check-in</div>
+            <div>check-out</div>
+          </div>
+          <div>
+            <div id="_in"></div>
+            <div id="_out"></div>
           </div>
           <p>Total length of stay:</p>
           <h4>1 Night</h4>
@@ -357,11 +377,18 @@
         </div>
 
         <!-- now i have to work here  -->
-        <div style="border: none;" id="_complete">
+        <div style="border: none" id="_complete">
           <a href="OTP.html"><button>Complete Booking</button></a>
         </div>
       </div>
     </div>
+    <footer></footer>
   </body>
 </html>
+<script type="module">
+  import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
+</script>
 <script src="./script/payment.js"></script>

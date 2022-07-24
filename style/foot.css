@@ -185,3 +185,62 @@ li:hover{
 }
     
 
+#footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    background-color: 
+    #003580;
+  
+  }
+  #andar{
+    padding-top: 20px;
+    height: 60px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+  #this a{
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+   
+  }
+  #finalfooter{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    
+  
+   
+  }
+  #first{
+  
+    width: 50%;
+    height: 70px;
+    
+    margin: auto;
+  }
+  #second{
+    width: 85%;
+    height: 120px;
+    
+    margin: auto;
+    display: flex;
+  }
+  #first>p{
+    text-align: center;
+  }
+  #second>div{
+    width: 22%;
+    height: 40px;
+    
+    margin: auto;
+  }
+  #second>div>img{
+    width: 47%;
+  
+  }

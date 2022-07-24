@@ -8,13 +8,15 @@
     margin: auto;
 
 }
+
 #reserve{
+    padding-top: 20px;
     display: flex;
 
     gap: 20px;
 }
 #sidebar{
-    width: 280px;
+    width: 320px;
 }
 #_hotel_images{
     width: 100%;
@@ -99,6 +101,7 @@
 #_table{
     width: 100%;
     margin-top: 35px;
+    color: black;
 }
 #_table>thead{
     background-color: 

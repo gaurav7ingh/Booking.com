@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/register.css">
     <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/foot.css">
 </head>
 
 <body>
@@ -38,13 +39,15 @@
             </div>
         </div>
     </div>
-
+    <footer></footer>
 </body>
 
 </html>
 <script type="module">
     import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
     document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
 </script>
 
 <script src="./script/registerpage.js"></script>

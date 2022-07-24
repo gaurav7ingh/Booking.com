@@ -571,6 +571,9 @@ main {
     position: relative;
     /* border: 1px solid blue; */
 }
+.field-check{
+    display: flex;
+}
 .silde7_elements {
     display: flex;
     flex-wrap: nowrap;
