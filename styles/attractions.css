@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "mallory","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#total1 {
+    background-color: rgba(220, 220, 220, 0.499);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#total1>div {
+    
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+#total1 p {
+    margin-left: 12%;
+}
+#total1 h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-left: 12%;
+}
+.search {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 9% 73% 16%;
+    height: 62px;
+    margin-top: 30px;
+    background-color: orange;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.search>div:nth-child(1) {
+    height: 50px;
+    background-color: white;
+    margin-left: 9%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.search input {
+    width: 100%;
+    height:50px;
+    border: 0px;
+    outline: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+.search input::placeholder{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+#search{
+    margin-left: 6%;
+    background-color: darkblue;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#total2>div:nth-child(1) {
+    width: 75%;
+    margin: auto;
+    height: 58px;
+    display: grid;
+    grid-template-columns: 32% 60%;
+    border: 1px solid grey;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+#total2 span {
+    color: rgb(3, 122, 170);
+}
+
+#nearby {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+}
+.nearby {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+#nearby>div {
+    height: 50px;
+    padding-top: 150px;
+    color: white;
+    margin-top: 30px;
+}
+#nearby>div:nth-child(1) {
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/975528.jpg?k=c9b9e6ccd083ca729fafc19f19a61be389da4a39a443af8aa71a5a368e90f1e2&o=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nearby h3, #nearby p {
+    margin-left: 20px;
+}
+
+#nearby>div:nth-child(2) {
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/684508.jpg?k=3a3827f08b7ca1d3601ab005b5137924140e379ae46179e706669eeb900da0f0&o=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nearby>div:nth-child(3) {
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/684947.jpg?k=ed28ddbf579fa491991e83bfda5904a0bb70041575f1da447677da7c19a930ae&o=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nearby>div:hover, #total4>div:hover {
+    background-size: 103%;
+    cursor: pointer;
+}
+.cover {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    border-top: 1px solid grey;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+#support {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+.support1 {
+    display: grid;
+    grid-template-columns: 8% 90%;
+    font-size: 14px;
+}
+.support1 h3 {
+    margin-bottom: 6px;
+}
+.support1 p {
+    color: rgba(0, 0, 0, 0.663);
+}
+
+#total3 {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+#total3>p {
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 15px;
+}
+.catagory {
+   display: grid;
+   grid-template-columns: 5% 9% 4% 5% 6% 8% 8% 10% 10% 10% 10%;
+   justify-content: space-around;
+   border-bottom: 1px solid grey;
+   color: rgba(0, 0, 0, 0.659);
+   font-size: 15px;
+   margin-top: 30px;
+   padding-bottom: 15px;
+}
+.catagory>div {
+    cursor: pointer;
+}
+#total4 {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1ft);
+    gap: 3%;
+}
+#total4>div {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
