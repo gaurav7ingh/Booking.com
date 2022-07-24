@@ -174,3 +174,10 @@
     </div>
 </body>
 </html>
+
+<script type="module" >
+    import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
+</script>
