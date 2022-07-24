@@ -11,6 +11,7 @@
     justify-content: space-between; 
     padding: 0.6%;
 }
+
 #Navbar2>div {
     display: grid;
     grid-template-columns: repeat(4,1fr);
