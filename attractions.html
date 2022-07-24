@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/attractions.css">
+</head>
+<body>
+    <div id="total1">
+        <div>
+            <h2>Find and book great travel experiences</h2>
+            <p>Discover tickets to museums, tours and activities</p>
+
+            <div class="search">
+                <div></div>
+                <div><input type="text" placeholder="Where are you going?"></div>
+                <div><input value="search" id="search"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="total2">
+        <div>
+            <p>Please check local guidelines before planning your visit.</p>
+            <p><span>
+                Learn more
+            </span></p>
+        </div>
+       <h3 class="nearby">Nearby Destination</h3>
+        <div id="nearby">
+            <div><h3>Varnasi</h3>
+            <p>66 things to do</p></div>
+
+            <div><h3>agra</h3>
+                <p>66 things to do</p></div>
+
+                <div><h3>Old Goa</h3>
+                    <p>66 things to do</p></div>
+        </div>
+
+        
+        <h3 class="cover">We've got you covered</h3>
+        
+        <div id="support">
+            <div>
+                <div class="support1">
+                    <div></div>
+                    <div>
+                        <h3>Explore top attractions</h3>
+                        <p>Experience the best of your destination, with attractions, tours, activities and more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support1">
+                <div></div>
+                <div><h3>Fast and flexible</h3>
+                <p>Book tickets online in minutes, with free cancellation on many attractions</p>
+             </div>
+            </div>
+
+            <div class="support1">
+                <div></div>
+                <div>
+                    <h3>Support when you need it</h3>
+                    <p>Booking.com's global Customer Service team is here to help 24/7m</p>
+                </div>
+             </div>
+        </div>
+
+        <div id="total3">
+            <h3>Explore more destinations</h3>
+        <p>Find things to do in cities around the world</p>
+        <div class="catagory">
+            <div id="europe">Europe</div>
+            <div id="North">North America</div>
+            <div id="asia">Asia</div>
+            <div id="africa">Africa</div>
+            <div id="oceania">Oceania</div>
+            <div id="middle">Middle East</div>
+            <div id="caribbean">Carribbean</div>
+            <div id="south">South America</div>
+            <div id="central">Central America</div>
+        </div>
+        <div id="total4">
+            <!-- append the data -->
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var arr = [
+        {
+            name:"London", x:600,url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72204269.jpg?k=dda35f09d4db949aa6786bc25686bddd016cdd12a2603193e90df0d44a51a1ac&o="
+        }, {
+            name:"Istanbul", x: 222, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/654667.jpg?k=38b7cadbc436ac8f1990d593aeea431bdca024ad7e19136de1a648a741efd1d2&o="
+        },{
+            name:"Paris",x:643,url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72204347.jpg?k=2028e72e4ea4eb18da986b8a60fd841f65fe0575db5012d723233b4427939b4a&o="
+        },{
+            name:"Hamburg", x:174, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/972064.jpg?k=39ff2ed8a135b1a557a19306fbc4cc4bd99943077a33ea6e7882717e1e755e32&o="
+        },
+        {
+            name:"Amsterdam", x:369, url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/71365537.jpg?k=aab55a712d088602738a94f84e75bcf9954b5b6208343eef1e9f2f2a2a75b75e&o="
+        },{
+            name:"Lisbon", x :407, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/619974.jpg?k=b6559eee3541cbeacc14fff159a46ca264a30730fb15513890df598efb61081c&o="
+        },{
+            name:"Rome", x:927, url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72203988.jpg?k=28ea5ce3cfe20aa8732059ec8cadede64c0964848fc0f436594ba04c4939d0d9&o="
+        },{
+            name:"Athens",x:269,url:"https://q-xx.bstatic.com/xdata/images/city/533x300/971378.jpg?k=7507de5787351052371d9e50901685a0092dc34bab445d780b5a2a550cc5f3e0&o="
+        },
+        {
+            name:"Venice",x:320, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/626995.jpg?k=087d41cf908392f99bd914423fa81ee1ff0e3e88e18ff17a34521c805c82870b&o="
+        },{
+            name:"Barceloma", x:555,url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72203920.jpg?k=3ac5c879aed7f63f8cdd5cff59e76ff9c4335c86b783aa6a32e2d3ecdc6a7fe9&o="
+        }, {
+            name:"Berlin", x:309, url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72204120.jpg?k=111c39b79aac9a364b9a993a86890d94abdb83916c15422c95151fa8b2391273&o="
+        },{
+            name:"Vienna", x:208, url:"https://q-xx.bstatic.com/xdata/images/xphoto/533x300/72203757.jpg?k=9bf4f4950e983ccc08599179cfd5b00ca5f0f0926c31791b6fdcaf5c98b157da&o="
+        }, {
+            name:"Porto", x:181, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/971987.jpg?k=c736a27ad6f01169148fe12d17f05cebf5a243860f9ab9380c246128a2c4e363&o="
+        },{
+            name:"Stockholm", x:130, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/685809.jpg?k=1118febd1a6bed4b02742c8b4d8530a83d4ed8decd8dcde4cb035e2a3e017a93&o="
+        },
+        {
+            name:"Madrid", x:342,url:"https://q-xx.bstatic.com/xdata/images/city/533x300/971357.jpg?k=561ae098e12302581c5aac611ecba9def5cd9bcc78bfc9107b8ce2b531be815c&o="
+        },{
+            name:"Armacao de Pera", x:251, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/685101.jpg?k=eb80793d434f68f0c0452ccb5f209f07a0c85c08f4eb34c4cd902bd778cbe032&o="
+        },{
+            name:"Napels", x:403, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/641107.jpg?k=3dd2586188d5ec6709d3b7c13ef93a08a5c79b966ab450b0355360b585199d8c&o="
+        },{
+            name:"Cordoba", x:66, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/971917.jpg?k=406c9c3f74d5e31fba2576697aa4362d8306f101174886f0454cd782a1a5cd7a&o="
+        },{
+            name:"Liverpool", x:69, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/968424.jpg?k=a7359f656b6b3f0de06a521e30f0ae86dbde6fe2d4f4245c35e299e9c6dcf3b0&o="
+        },{
+            name:"Turin", x:73, url:"https://q-xx.bstatic.com/xdata/images/city/533x300/643467.jpg?k=e1c10285c4e9876a0abec394a7eab1b8ceb992e7a0924a7e3a256a77770d61d7&o="
+        }
+    ]
+    
+    <script type="module" >
+    import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
+</script>
+    arr.forEach((el,i) => {
+        let div=document.createElement("div");
+        let back = el.url;
+        div.style.backgroundImage='url('+back+')'
+        let name = document.createElement("h3");
+        name.innerText=el.name;
+        let thing = document.createElement("p");
+        thing.innerText=`${el.x} things to do`;
+        div.append(name,thing);
+        document.querySelector("#total4").append(div)
+    });
+
+</script>
+

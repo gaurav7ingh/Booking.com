@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#jarvis{
+   
+    margin-top: 30px;
+}
+#accContainer{
+    height: 600px;
+    width: 58%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#accContainer h1{
+    color: rgb(68,68,68);
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+#accContainer .form-partition-line{
+    /* border: 1px dotted grey; */
+    height: 70%;
+    display: flex;
+    align-self: center;
+}
+#signupBox{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+#signupBox input {
+    padding: 7px;
+    margin: 15px 0px 20px 0px;
+    width: 100%;
+   
+}
+#signupBox .password{
+    width: 100%;
+   
+}
+#sign_up{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #0272A2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+#sign_up:hover{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: #055172;
+}
+#signupBox p{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(68,68,68);
+    line-height: 18px;
+    margin-top: 10px;
+}
+#signupBox a{
+    color: rgb(68,68,68);
+    font-weight: bold;
+    /* line-height: 15px; */
+}
+#signupBox label{
+    color: rgb(68,68,68);
+    font-size: 14px;
+}
