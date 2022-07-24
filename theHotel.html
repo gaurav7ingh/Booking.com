@@ -5,32 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style/theHotel.css" />
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/result.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/foot.css">
     <style>
+      #sidebar {
+        background-color: #febb02;
+      }
+      #sidebar > div {
+        box-shadow: none;
+      }
+      nav ~ div {
+        color: black;
+      }
+      h2 {
+        margin: 16px 0px;
+      }
       .silde7_elements {
         width: auto;
         display: grid;
         gap: 7px;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
-      .silde7_elements img{
+      .silde7_elements img {
         width: 93%;
       }
-      
     </style>
   </head>
   <body>
-    <div id="navbar"></div>
+    <nav></nav>
     <div id="_main_container">
       <div id="reserve">
-        <div id="sidebar"></div>
+        <div id="sidebar">
+          <div id="dates">
+            <h2>&nbsp; &nbsp;Search</h2>
+            &nbsp; &nbsp; Destination/property name: <br />
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="search here"
+            /><br /><br />
+            &nbsp; &nbsp;Check-in date <br />
+            <input type="date" name="" id="ridate" /><br /><br />
+            &nbsp; &nbsp;Check-out date <br />
+            <input type="date" name="" id="rodate" /><br /><br />
+
+            <input type="checkbox" name="" id="boxcheck1" />
+            Entire homes &amp; apartments <br />
+            <input type="checkbox" name="" id="boxcheck2" />
+            I'm travelling for work
+            <button onclick="search()" id="rsb">search</button>
+          </div>
+        </div>
         <div id="_hotel_images">
           <div id="_a">
             <a href="#_table" class="_a">Info & prices</a>
 
             <!-- anchor tags are left for here -->
 
-            <a href="" class="_a">Facilities</a>
+            <a href="#_choose" class="_a">Facilities</a>
             <a href="" class="_a">House rules</a>
             <a href="" class="_a">Guest reviews</a>
           </div>
@@ -40,11 +75,11 @@
           </div>
           <div id="_image_main">
             <div id="_image_1">
-              <img src="" alt="wait.."/>
-              <img src="" alt="wait.."/>
+              <img src="" alt="loading.." />
+              <img src="" alt="loading.." />
             </div>
             <div id="_image_2">
-              <img src="" id="_main_image" alt="wait.."/>
+              <img src="" id="_main_image" alt="loading.." />
             </div>
           </div>
           <div id="_more_img"></div>
@@ -62,16 +97,22 @@
         />
         <img src="https://cdn-icons-png.flaticon.com/128/2057/2057432.png" />
         <img src="https://cdn-icons-png.flaticon.com/128/857/857663.png" />
-        <img src="https://cdn-icons.flaticon.com/png/128/5557/premium/5557951.png?token=exp=1658406139~hmac=1aff5d82d5b4b8104abd10309f4a8c71">
-        <img src="https://cdn-icons.flaticon.com/png/128/654/premium/654994.png?token=exp=1658405914~hmac=d10327bf9c5c769370e27310fe333a0e">
-        <img src="https://cdn-icons.flaticon.com/png/128/3214/premium/3214208.png?token=exp=1658406049~hmac=6c0f6288dca1658d4d2a33c3e60d87e9">
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/5557/premium/5557951.png?token=exp=1658406139~hmac=1aff5d82d5b4b8104abd10309f4a8c71"
+        />
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/654/premium/654994.png?token=exp=1658405914~hmac=d10327bf9c5c769370e27310fe333a0e"
+        />
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/3214/premium/3214208.png?token=exp=1658406049~hmac=6c0f6288dca1658d4d2a33c3e60d87e9"
+        />
       </div>
-      <hr>
+      <hr />
 
       <!-- Description section  -->
       <h2 id="_margin_top">Description</h2>
       <p id="_details_explain"></p>
-      <hr>
+      <hr />
 
       <!-- table section  -->
       <table id="_table">
@@ -104,9 +145,8 @@
           />Manage your bookings online
         </div>
         <div class="_choose">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/589/589671.png"
-          />The staff speak English
+          <img src="https://cdn-icons-png.flaticon.com/128/589/589671.png" />The
+          staff speak English
         </div>
         <div class="_choose">
           <img
@@ -114,10 +154,10 @@
           />Great location and facilities for couples
         </div>
       </div>
-      <hr>
+      <hr />
 
       <!-- */   the fine print   /* -->
-      
+
       <div id="_name_reserve">
         <h2>The Fine Print</h2>
         <a href="#_table"><button class="_button_">Reserve</button></a>
@@ -125,76 +165,83 @@
       <div id="_fine_print"></div>
       <section class="bloc_07">
         <h5>Homes guests love</h5>
-  
-       
-  
-        <div class="bloc_07_sildebox">
-  
-            <div class="silde7_elements">
-  
-                <div class="card_silde_2 card_silde_7">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max500/48243386.jpg?k=9891532fb6d24d301b65659650e79812c426f46de905fba30bb8a8c5fea52d85&o="
-                        alt="rome">
-                    <div class="card_silde7_text">
-                        <p>Romance al Colosseo</p>
-                        <p>Rome</p>
-                        <p class="price7">Starting from ₹ 24,996</p>
-                    </div>
-                    <div class="card7_note">
-                        <div>9.8</div>
-                        <p><span>Exceptional </span>. 46 reviews </p>
-                    </div>
-                </div>
-  
-                <div class="card_silde_2 card_silde_7">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max500/73220198.jpg?k=befe483c7a64f1656fbe3a307d542a74da26fbf458d2b2c7d22f0c19e9828705&o="
-                        alt="bedroom">
-                    <div class="card_silde7_text">
-                        <p>LivinParis-Luxury 3 Bedrooms Le Lovur...</p>
-                        <p>Paris</p>
-                        <p class="price7">Starting from ₹ 39,896</p>
-                    </div>
-                    <div class="card7_note">
-                        <div>8.2</div>
-                        <p><span>Very good </span>. 34 reviews</p>
-                    </div>
-                </div>
-  
-                <div class="card_silde_2 card_silde_7">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max500/93164515.jpg?k=48b6d7931e47382ff8b765df2fdcb4b5d05669db1f4b01859852aea44cba3367&o="
-                        alt="room">
-                    <div class="card_silde7_text">
-                        <p>Casa Portuguesa Prata</p>
-                        <p>Libson</p>
-                        <p class="price7">Starting from ₹ 17,350</p>
-                    </div>
-                    <div class="card7_note">
-                        <div>8.3</div>
-                        <p><span>Very good </span>. 47 reviews</p>
-                    </div>
-                </div>
-  
-                <div class="card_silde_2 card_silde_7">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max500/80970678.jpg?k=5522889e6ffe1e96899b9e82cee9a7653af667b6892383a42820c64acdacdae3&o="
-                        alt="prague">
-                    <div class="card_silde7_text">
-                        <p>Michakska Old Town Apartment</p>
-                        <p>Prague</p>
-                        <p class="price7">Starting from ₹ 29,481</p>
-                    </div>
-                    <div class="card7_note">
-                        <div>8.9</div>
-                        <p><span>Fabulous </span>. 85 reviews</p>
-                    </div>
-                </div>
 
+        <div class="bloc_07_sildebox">
+          <div class="silde7_elements">
+            <div class="card_silde_2 card_silde_7">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max500/48243386.jpg?k=9891532fb6d24d301b65659650e79812c426f46de905fba30bb8a8c5fea52d85&o="
+                alt="rome"
+              />
+              <div class="card_silde7_text">
+                <p>Romance al Colosseo</p>
+                <p>Rome</p>
+                <p class="price7">Starting from ₹ 24,996</p>
+              </div>
+              <div class="card7_note">
+                <div>9.8</div>
+                <p><span>Exceptional </span>. 46 reviews</p>
+              </div>
             </div>
-  
+
+            <div class="card_silde_2 card_silde_7">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max500/73220198.jpg?k=befe483c7a64f1656fbe3a307d542a74da26fbf458d2b2c7d22f0c19e9828705&o="
+                alt="bedroom"
+              />
+              <div class="card_silde7_text">
+                <p>LivinParis-Luxury 3 Bedrooms Le Lovur...</p>
+                <p>Paris</p>
+                <p class="price7">Starting from ₹ 39,896</p>
+              </div>
+              <div class="card7_note">
+                <div>8.2</div>
+                <p><span>Very good </span>. 34 reviews</p>
+              </div>
+            </div>
+
+            <div class="card_silde_2 card_silde_7">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max500/93164515.jpg?k=48b6d7931e47382ff8b765df2fdcb4b5d05669db1f4b01859852aea44cba3367&o="
+                alt="room"
+              />
+              <div class="card_silde7_text">
+                <p>Casa Portuguesa Prata</p>
+                <p>Libson</p>
+                <p class="price7">Starting from ₹ 17,350</p>
+              </div>
+              <div class="card7_note">
+                <div>8.3</div>
+                <p><span>Very good </span>. 47 reviews</p>
+              </div>
+            </div>
+
+            <div class="card_silde_2 card_silde_7">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max500/80970678.jpg?k=5522889e6ffe1e96899b9e82cee9a7653af667b6892383a42820c64acdacdae3&o="
+                alt="prague"
+              />
+              <div class="card_silde7_text">
+                <p>Michakska Old Town Apartment</p>
+                <p>Prague</p>
+                <p class="price7">Starting from ₹ 29,481</p>
+              </div>
+              <div class="card7_note">
+                <div>8.9</div>
+                <p><span>Fabulous </span>. 85 reviews</p>
+              </div>
+            </div>
+          </div>
         </div>
-  
-    </section>
+      </section>
     </div>
-    
+    <footer></footer>
   </body>
 </html>
-<script src="./theHotel.js"></script>
+<script type="module">
+  import nav from "./component/nav.js"
+  import footer from "./component/footer.js"
+  document.querySelector("nav").innerHTML = nav()
+  document.querySelector("footer").innerHTML = footer()
+</script>
+<script src="./script/theHotel.js"></script>

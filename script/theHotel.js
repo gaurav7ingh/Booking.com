@@ -1,14 +1,17 @@
+
+
 let onload = async () => {
+  let id = JSON.parse(localStorage.getItem("hotelId"));
     // let child = document.querySelector('#child').value;
     let child=3
     // let adults = document.querySelector('#adults').value;
     let adults = 2
-  let url1 = `https://booking-com.p.rapidapi.com/v1/hotels/data?hotel_id=1377073&locale=en-gb`
-  let url = `https://booking-com.p.rapidapi.com/v1/hotels/photos?locale=en-gb&hotel_id=1377073`
+  let url1 = `https://booking-com.p.rapidapi.com/v1/hotels/data?hotel_id=${id}&locale=en-gb`
+  let url = `https://booking-com.p.rapidapi.com/v1/hotels/photos?locale=en-gb&hotel_id=${id}`
   let res = await fetch(url1, {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "3bc9083073msh0e3bcbca556a684p1a3788jsn18344c7b0ebd",
+      'X-RapidAPI-Key': 'a62358b907msh3229afbfb51474fp1f1edfjsn498ec30f471f',
       "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
     },
   })
@@ -17,7 +20,7 @@ let onload = async () => {
   let photos = await fetch(url, {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "3bc9083073msh0e3bcbca556a684p1a3788jsn18344c7b0ebe",
+      'X-RapidAPI-Key': 'a62358b907msh3229afbfb51474fp1f1edfjsn498ec30f471f',
       "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
     },
   })
@@ -49,6 +52,7 @@ let onload = async () => {
   _more_img.append(img1, img2, img3, img4, img5)
   _details_explain.innerText = res.description_translations[0].description;
   _fine_print.innerText =  res.description_translations[0].description;
+  localStorage.setItem("_fine_print",res.description_translations[0].description)
 }
 onload()
 
@@ -58,7 +62,7 @@ async function appendTable(find,child,adults){
         let res = await fetch(url, {
           method: "GET",
           headers: {
-            "X-RapidAPI-Key": "3bc9083073msh0e3bcbca556a684p1a3788jsn18344c7b0ebd",
+            'X-RapidAPI-Key': 'a62358b907msh3229afbfb51474fp1f1edfjsn498ec30f471f',
             "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
           },
         })
@@ -84,6 +88,11 @@ function appendTable2(data){
        
         let td5 = document.createElement("td");
         let btn = document.createElement("button");
+        btn.addEventListener("click",()=>{
+          localStorage.setItem("price",el.min_price.price)
+          localStorage.setItem("_type",el.name_without_policy);
+          location.href = "payment.html"
+        })
         btn.className ="_button_"
         btn.innerText="I'LL Reserve"
         td1.append(h3)

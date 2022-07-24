@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/attractions.css">
+    <link rel="stylesheet" href="./style/attractions.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/foot.css">
 </head>
 <body>
+    <nav></nav>
     <div id="total1">
         <div>
             <h2>Find and book great travel experiences</h2>
@@ -89,6 +92,7 @@
         </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
 <script>
@@ -153,10 +157,10 @@
     });
 
 </script>
+
 <script type="module" >
     import nav from "./component/nav.js"
     import footer from "./component/footer.js"
     document.querySelector("nav").innerHTML = nav()
     document.querySelector('footer').innerHTML = footer();
 </script>
-

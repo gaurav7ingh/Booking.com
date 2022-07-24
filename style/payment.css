@@ -1,7 +1,5 @@
-*{
-    margin: 4px;
-    padding: 2px;
-    box-sizing: border-box;
+._room_type{
+    font-weight: bold;
 }
 #_pay{
     width: 89%;
